@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_comic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/marv" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_comic"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="WOLVERING (2106) # 35"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="soidgjfjo sdiogj oisdg dsfoigj dsfgij sdfgioj oidsfgj dfsiojg pdsfg jdsfgj podsfjg odisfpjg isdr jo"
+                android:textSize="13sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fbsave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/title"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/close" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
